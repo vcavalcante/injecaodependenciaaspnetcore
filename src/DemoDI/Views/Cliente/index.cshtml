@@ -1,0 +1,33 @@
+﻿@model IEnumerable<DemoDI.Models.Cliente>
+@{
+    ViewData["Title"] = "Pedido";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               Id
+            </th>
+            <th>
+                Nome
+            </th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+   
+            </tr>
+        }
+    </tbody>
+</table>
+
