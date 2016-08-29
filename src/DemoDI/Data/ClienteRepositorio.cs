@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace DemoDI.Data
 {
-    public class ClienteRepositorio
+    public class ClienteRepositorio:IClienteRepositorio
     {
         public ClienteRepositorio()
         {

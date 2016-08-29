@@ -9,8 +9,8 @@ namespace DemoDI.Controllers
 {
     public class ClienteController : Controller
     {
-        public ClienteRepositorio _clienteRepositorio { get; set; }
-        public ClienteController(ClienteRepositorio clienteRepositorio)
+        public IClienteRepositorio _clienteRepositorio { get; set; }
+        public ClienteController(IClienteRepositorio clienteRepositorio)
         {
             _clienteRepositorio = clienteRepositorio;
         }
