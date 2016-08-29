@@ -11,9 +11,11 @@ namespace DemoDI.Controllers
     {
         public IActionResult Index()
         {
-            var pedidoRepositorio = new ClienteRepositorio();
-            var pedidos = pedidoRepositorio.ObterTodos();
-            return View(pedidos);
+            var clienteRepositorio = new ClienteRepositorio();
+            var clientes = clienteRepositorio.ObterTodos();
+            return View(clientes);
         }
     }
 }
+
+
