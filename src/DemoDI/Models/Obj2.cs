@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace DemoDI.Models
 {
-    public class Obj2
+    public class Obj2:IObj2
     {
         public Obj2()
         {
-            this.Id = new Guid();
+            this.Id = Guid.NewGuid();
         }
         public Guid Id { get; set; }
     }

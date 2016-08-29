@@ -1,5 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    @inject Obj3 obj3A
+    @inject Obj3 obj3B
 }
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
@@ -105,5 +107,21 @@
             <li><a href="http://go.microsoft.com/fwlink/?LinkID=517853">Run tools such as EF migrations and more</a></li>
             <li><a href="http://go.microsoft.com/fwlink/?LinkID=398609">Publish to Microsoft Azure Web Apps</a></li>
         </ul>
+    </div>
+    <div class="col-md12">
+
+        <p>
+            <strong>Objeto 1:</strong> @ViewBag.obj1.Id
+        </p>
+        <p>
+            <strong>Objeto 2:</strong> @ViewBag.obj2.Id
+        </p>
+        <p>
+            <strong>Objeto C:</strong> @obj3A.Id
+        </p>
+        <p>
+            <strong>Objeto C:</strong> @obj3B.Id
+        </p>
+
     </div>
 </div>

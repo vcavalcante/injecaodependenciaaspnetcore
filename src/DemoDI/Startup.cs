@@ -53,7 +53,9 @@ namespace DemoDI
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
             services.AddTransient<IClienteRepositorio, ClienteRepositorio>();
-
+            services.AddSingleton<IObj1, Obj1>();
+            services.AddScoped<IObj2, Obj2>();
+            services.AddTransient<Obj3>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

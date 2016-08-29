@@ -9,7 +9,7 @@ namespace DemoDI.Models
     {
         public Obj3()
         {
-            this.Id = new Guid();
+            this.Id = Guid.NewGuid();
         }
         public Guid Id { get; set; }
     }
